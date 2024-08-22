@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: grey;
+}
+
+.services-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative; /* Ensure images are placed relative to this container */
+}
+
+.services-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-content h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.background-images {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicking through images */
+    z-index: -1; /* Place images behind content */
+}
+
+.background-img {
+    position: absolute;
+    width: 150px; /* Set to a small size */
+    height: auto;
+    border-radius: 8px;
+}
+
+.background-img:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.background-img:nth-child(2) {
+    top: 30%;
+    left: 50%;
+}
+
+.background-img:nth-child(3) {
+    top: 60%;
+    left: 80%;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
